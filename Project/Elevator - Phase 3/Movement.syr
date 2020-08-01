@@ -1,0 +1,537 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: Movement.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Movement.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Movement"
+Output Format                      : NGC
+Target Device                      : xc3s400-5-pq208
+
+---- Source Options
+Top Module Name                    : Movement
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "G:/Az e Manteghi/Project/Elevator/freq_divider.vhd" in Library work.
+Architecture behavioral of Entity freq_divider is up to date.
+Compiling verilog file "Movement - Copy.v" in library work
+Module <Movement> compiled
+No errors in compilation
+Analysis of file <"Movement.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Movement> in library <work> with parameters.
+	S1 = "0000"
+	S2 = "0001"
+	S3 = "0010"
+	Sd1 = "0110"
+	Sd2 = "0101"
+	Sd21 = "0111"
+	Su2 = "0011"
+	Su23 = "1000"
+	Su3 = "0100"
+
+Analyzing hierarchy for entity <freq_divider> in library <work> (architecture <behavioral>) with generics.
+	m = 1
+	n = 40000000
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Movement>.
+	S1 = 4'b0000
+	S2 = 4'b0001
+	S3 = 4'b0010
+	Sd1 = 4'b0110
+	Sd2 = 4'b0101
+	Sd21 = 4'b0111
+	Su2 = 4'b0011
+	Su23 = 4'b1000
+	Su3 = 4'b0100
+Module <Movement> is correct for synthesis.
+ 
+Analyzing generic Entity <freq_divider> in library <work> (Architecture <behavioral>).
+	m = 1
+	n = 40000000
+Entity <freq_divider> analyzed. Unit <freq_divider> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <freq_divider>.
+    Related source file is "G:/Az e Manteghi/Project/Elevator/freq_divider.vhd".
+    Found 25-bit up counter for signal <counter>.
+    Found 25-bit comparator less for signal <counter$cmp_lt0000> created at line 23.
+    Found 1-bit register for signal <step>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <freq_divider> synthesized.
+
+
+Synthesizing Unit <Movement>.
+    Related source file is "Movement - Copy.v".
+WARNING:Xst:646 - Signal <Prstate> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Using one-hot encoding for signal <Nxtstate>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <Nxtstate> of Case statement line 66 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <Nxtstate> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <Nxtstate> of Case statement line 66 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <Nxtstate> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <Nxtstate> of Case statement line 66 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <Nxtstate> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <Nxtstate> of Case statement line 66 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <Nxtstate> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <Nxtstate> of Case statement line 66 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <Nxtstate> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <Nxtstate> of Case statement line 66 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <Nxtstate> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <Nxtstate> of Case statement line 66 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <Nxtstate> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <Nxtstate> of Case statement line 66 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <Nxtstate> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <Nxtstate> of Case statement line 66 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <Nxtstate> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found 1-bit register for signal <direction>.
+    Found 3-bit register for signal <door>.
+    Found 2-bit register for signal <motor>.
+    Found 9-bit register for signal <Nxtstate>.
+    Found 3-bit register for signal <queue>.
+    Summary:
+	inferred  18 D-type flip-flop(s).
+Unit <Movement> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 25-bit up counter                                     : 1
+# Registers                                            : 16
+ 1-bit register                                        : 14
+ 2-bit register                                        : 1
+ 3-bit register                                        : 1
+# Comparators                                          : 1
+ 25-bit comparator less                                : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 25-bit up counter                                     : 1
+# Registers                                            : 19
+ Flip-Flops                                            : 19
+# Comparators                                          : 1
+ 25-bit comparator less                                : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Movement> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Movement, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 44
+ Flip-Flops                                            : 44
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Movement.ngr
+Top Level Output File Name         : Movement
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 16
+
+Cell Usage :
+# BELS                             : 166
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 4
+#      LUT2                        : 30
+#      LUT2_D                      : 3
+#      LUT3                        : 9
+#      LUT3_D                      : 2
+#      LUT3_L                      : 1
+#      LUT4                        : 37
+#      LUT4_D                      : 2
+#      LUT4_L                      : 9
+#      MUXCY                       : 35
+#      MUXF5                       : 2
+#      VCC                         : 1
+#      XORCY                       : 25
+# FlipFlops/Latches                : 44
+#      FDC                         : 28
+#      FDCE                        : 1
+#      FDCP                        : 9
+#      FDE                         : 3
+#      FDPE                        : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 15
+#      IBUF                        : 10
+#      OBUF                        : 5
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400pq208-5 
+
+ Number of Slices:                       52  out of   3584     1%  
+ Number of Slice Flip Flops:             44  out of   7168     0%  
+ Number of 4 input LUTs:                102  out of   7168     1%  
+ Number of IOs:                          16
+ Number of bonded IOBs:                  16  out of    141    11%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+DUT/step                           | NONE(door_1)           | 18    |
+clk                                | BUFGP                  | 26    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------+------------------------+-------+
+Control Signal                           | Buffer(FF name)        | Load  |
+-----------------------------------------+------------------------+-------+
+DUT/reset_inv(DUT/reset_inv1_INV_0:O)    | NONE(DUT/counter_0)    | 35    |
+N0(XST_GND:G)                            | NONE(Nxtstate_3)       | 6     |
+door_and0000(door_and00001:O)            | NONE(door_1)           | 3     |
+Nxtstate_0_and0000(Nxtstate_0_and00001:O)| NONE(Nxtstate_0)       | 1     |
+Nxtstate_0_and0001(Nxtstate_0_and00011:O)| NONE(Nxtstate_0)       | 1     |
+Nxtstate_1_and0000(Nxtstate_1_and00001:O)| NONE(Nxtstate_1)       | 1     |
+Nxtstate_1_and0001(Nxtstate_1_and00011:O)| NONE(Nxtstate_1)       | 1     |
+Nxtstate_2_and0000(Nxtstate_2_and00001:O)| NONE(Nxtstate_2)       | 1     |
+Nxtstate_2_and0001(Nxtstate_2_and00011:O)| NONE(Nxtstate_2)       | 1     |
+-----------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 8.330ns (Maximum Frequency: 120.047MHz)
+   Minimum input arrival time before clock: 6.581ns
+   Maximum output required time after clock: 6.280ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DUT/step'
+  Clock period: 6.367ns (frequency: 157.068MHz)
+  Total number of paths / destination ports: 175 / 18
+-------------------------------------------------------------------------
+Delay:               6.367ns (Levels of Logic = 4)
+  Source:            queue_2 (FF)
+  Destination:       door_3 (FF)
+  Source Clock:      DUT/step rising
+  Destination Clock: DUT/step rising
+
+  Data Path: queue_2 to door_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.626   0.851  queue_2 (queue_2)
+     LUT3:I1->O           13   0.479   1.289  _mux00001 (_mux0000)
+     LUT4:I0->O            1   0.479   0.740  Nxtstate_2_mux0000_SW1 (N331)
+     LUT4:I2->O            2   0.479   0.768  Nxtstate_2_mux0000 (Nxtstate_2_mux0000)
+     LUT4:I3->O            1   0.479   0.000  door_mux0000<0>30 (door_mux0000<0>)
+     FDPE:D                    0.176          door_3
+    ----------------------------------------
+    Total                      6.367ns (2.718ns logic, 3.649ns route)
+                                       (42.7% logic, 57.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.330ns (frequency: 120.047MHz)
+  Total number of paths / destination ports: 6293 / 27
+-------------------------------------------------------------------------
+Delay:               8.330ns (Levels of Logic = 38)
+  Source:            DUT/counter_8 (FF)
+  Destination:       DUT/counter_24 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: DUT/counter_8 to DUT/counter_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.626   1.040  DUT/counter_8 (DUT/counter_8)
+     LUT1:I0->O            1   0.479   0.000  DUT/Mcompar_counter_cmp_lt0000_cy<0>_rt (DUT/Mcompar_counter_cmp_lt0000_cy<0>_rt)
+     MUXCY:S->O            1   0.435   0.000  DUT/Mcompar_counter_cmp_lt0000_cy<0> (DUT/Mcompar_counter_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcompar_counter_cmp_lt0000_cy<1> (DUT/Mcompar_counter_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcompar_counter_cmp_lt0000_cy<2> (DUT/Mcompar_counter_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcompar_counter_cmp_lt0000_cy<3> (DUT/Mcompar_counter_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcompar_counter_cmp_lt0000_cy<4> (DUT/Mcompar_counter_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcompar_counter_cmp_lt0000_cy<5> (DUT/Mcompar_counter_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcompar_counter_cmp_lt0000_cy<6> (DUT/Mcompar_counter_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcompar_counter_cmp_lt0000_cy<7> (DUT/Mcompar_counter_cmp_lt0000_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcompar_counter_cmp_lt0000_cy<8> (DUT/Mcompar_counter_cmp_lt0000_cy<8>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcompar_counter_cmp_lt0000_cy<9> (DUT/Mcompar_counter_cmp_lt0000_cy<9>)
+     MUXCY:CI->O          27   0.246   1.551  DUT/Mcompar_counter_cmp_lt0000_cy<10> (DUT/Mcompar_counter_cmp_lt0000_cy<10>)
+     INV:I->O              1   0.479   0.681  DUT/Mcompar_counter_cmp_lt0000_cy<10>_inv_INV_0 (DUT/counter_cmp_lt0000)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcount_counter_cy<0> (DUT/Mcount_counter_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcount_counter_cy<1> (DUT/Mcount_counter_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcount_counter_cy<2> (DUT/Mcount_counter_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcount_counter_cy<3> (DUT/Mcount_counter_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcount_counter_cy<4> (DUT/Mcount_counter_cy<4>)
+     MUXCY:CI->O           1   0.055   0.000  DUT/Mcount_counter_cy<5> (DUT/Mcount_counter_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcount_counter_cy<6> (DUT/Mcount_counter_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcount_counter_cy<7> (DUT/Mcount_counter_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcount_counter_cy<8> (DUT/Mcount_counter_cy<8>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcount_counter_cy<9> (DUT/Mcount_counter_cy<9>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcount_counter_cy<10> (DUT/Mcount_counter_cy<10>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcount_counter_cy<11> (DUT/Mcount_counter_cy<11>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcount_counter_cy<12> (DUT/Mcount_counter_cy<12>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcount_counter_cy<13> (DUT/Mcount_counter_cy<13>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcount_counter_cy<14> (DUT/Mcount_counter_cy<14>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcount_counter_cy<15> (DUT/Mcount_counter_cy<15>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcount_counter_cy<16> (DUT/Mcount_counter_cy<16>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcount_counter_cy<17> (DUT/Mcount_counter_cy<17>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcount_counter_cy<18> (DUT/Mcount_counter_cy<18>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcount_counter_cy<19> (DUT/Mcount_counter_cy<19>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcount_counter_cy<20> (DUT/Mcount_counter_cy<20>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcount_counter_cy<21> (DUT/Mcount_counter_cy<21>)
+     MUXCY:CI->O           1   0.056   0.000  DUT/Mcount_counter_cy<22> (DUT/Mcount_counter_cy<22>)
+     MUXCY:CI->O           0   0.056   0.000  DUT/Mcount_counter_cy<23> (DUT/Mcount_counter_cy<23>)
+     XORCY:CI->O           1   0.786   0.000  DUT/Mcount_counter_xor<24> (DUT/Mcount_counter24)
+     FDC:D                     0.176          DUT/counter_24
+    ----------------------------------------
+    Total                      8.330ns (5.058ns logic, 3.272ns route)
+                                       (60.7% logic, 39.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DUT/step'
+  Total number of paths / destination ports: 136 / 24
+-------------------------------------------------------------------------
+Offset:              6.581ns (Levels of Logic = 5)
+  Source:            outCall<2> (PAD)
+  Destination:       door_3 (FF)
+  Destination Clock: DUT/step rising
+
+  Data Path: outCall<2> to door_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.715   0.976  outCall_2_IBUF (outCall_2_IBUF)
+     LUT3:I0->O           13   0.479   1.289  _mux00001 (_mux0000)
+     LUT4:I0->O            1   0.479   0.740  Nxtstate_2_mux0000_SW1 (N331)
+     LUT4:I2->O            2   0.479   0.768  Nxtstate_2_mux0000 (Nxtstate_2_mux0000)
+     LUT4:I3->O            1   0.479   0.000  door_mux0000<0>30 (door_mux0000<0>)
+     FDPE:D                    0.176          door_3
+    ----------------------------------------
+    Total                      6.581ns (2.807ns logic, 3.774ns route)
+                                       (42.7% logic, 57.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DUT/step'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              6.280ns (Levels of Logic = 1)
+  Source:            door_3 (FF)
+  Destination:       doorOut<3> (PAD)
+  Source Clock:      DUT/step rising
+
+  Data Path: door_3 to doorOut<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q             2   0.626   0.745  door_3 (door_3)
+     OBUF:I->O                 4.909          doorOut_3_OBUF (doorOut<3>)
+    ----------------------------------------
+    Total                      6.280ns (5.535ns logic, 0.745ns route)
+                                       (88.1% logic, 11.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.57 secs
+ 
+--> 
+
+Total memory usage is 258360 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+

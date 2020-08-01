@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "G:/Az e Manteghi/Project/Elevator/Movement_isim_beh.exe" -prj "G:/Az e Manteghi/Project/Elevator/Movement_beh.prj" "work.Movement" "work.glbl" 

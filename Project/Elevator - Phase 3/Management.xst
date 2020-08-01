@@ -1,0 +1,5 @@
+set -tmpdir "D:/backep c/Uni/Term e 3/Logic/Project/Elevator - Phase 3/xst/projnav.tmp"
+set -xsthdpdir "D:/backep c/Uni/Term e 3/Logic/Project/Elevator - Phase 3/xst"
+elaborate
+-ifn Management.prj
+-ifmt mixed

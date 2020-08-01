@@ -1,0 +1,153 @@
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Movement_map.ncd Movement.ngd Movement.pcf 
+par -w -intstyle ise -ol high -mt off Movement_map.ncd Movement.ncd Movement.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Movement.twx Movement.ncd -o Movement.twr Movement.pcf 
+bitgen -intstyle ise -f Movement.ut Movement.ncd 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Movement_map.ncd Movement.ngd Movement.pcf 
+par -w -intstyle ise -ol high -mt off Movement_map.ncd Movement.ncd Movement.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Movement.twx Movement.ncd -o Movement.twr Movement.pcf 
+bitgen -intstyle ise -f Movement.ut Movement.ncd 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Movement_map.ncd Movement.ngd Movement.pcf 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Movement_map.ncd Movement.ngd Movement.pcf 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Movement_map.ncd Movement.ngd Movement.pcf 
+par -w -intstyle ise -ol high -mt off Movement_map.ncd Movement.ncd Movement.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Movement.twx Movement.ncd -o Movement.twr Movement.pcf 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Movement_map.ncd Movement.ngd Movement.pcf 
+par -w -intstyle ise -ol high -mt off Movement_map.ncd Movement.ncd Movement.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Movement.twx Movement.ncd -o Movement.twr Movement.pcf 
+bitgen -intstyle ise -f Movement.ut Movement.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Movement_map.ncd Movement.ngd Movement.pcf 
+par -w -intstyle ise -ol high -mt off Movement_map.ncd Movement.ncd Movement.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Movement.twx Movement.ncd -o Movement.twr Movement.pcf 
+bitgen -intstyle ise -f Movement.ut Movement.ncd 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fpg.ucf -p xc7a100t-csg324-3 "Movement.ngc" Movement.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fpg.ucf -p xc7a100t-csg324-3 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Movement_map.ncd Movement.ngd Movement.pcf 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fpg.ucf -p xc7a100t-csg324-3 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Movement_map.ncd Movement.ngd Movement.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Movement_map.ncd Movement.ngd Movement.pcf 
+par -w -intstyle ise -ol high -mt off Movement_map.ncd Movement.ncd Movement.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Movement.twx Movement.ncd -o Movement.twr Movement.pcf 
+bitgen -intstyle ise -f Movement.ut Movement.ncd 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Movement_map.ncd Movement.ngd Movement.pcf 
+par -w -intstyle ise -ol high -mt off Movement_map.ncd Movement.ncd Movement.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Movement.twx Movement.ncd -o Movement.twr Movement.pcf 
+bitgen -intstyle ise -f Movement.ut Movement.ncd 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Movement_map.ncd Movement.ngd Movement.pcf 
+par -w -intstyle ise -ol high -mt off Movement_map.ncd Movement.ncd Movement.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Movement.twx Movement.ncd -o Movement.twr Movement.pcf 
+bitgen -intstyle ise -f Movement.ut Movement.ncd 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Movement_map.ncd Movement.ngd Movement.pcf 
+par -w -intstyle ise -ol high -mt off Movement_map.ncd Movement.ncd Movement.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Movement.twx Movement.ncd -o Movement.twr Movement.pcf 
+bitgen -intstyle ise -f Movement.ut Movement.ncd 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Movement_map.ncd Movement.ngd Movement.pcf 
+par -w -intstyle ise -ol high -mt off Movement_map.ncd Movement.ncd Movement.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Movement.twx Movement.ncd -o Movement.twr Movement.pcf 
+bitgen -intstyle ise -f Movement.ut Movement.ncd 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Movement_map.ncd Movement.ngd Movement.pcf 
+par -w -intstyle ise -ol high -mt off Movement_map.ncd Movement.ncd Movement.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Movement.twx Movement.ncd -o Movement.twr Movement.pcf 
+bitgen -intstyle ise -f Movement.ut Movement.ncd 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fpg.ucf -p xc7a100t-csg324-3 "Movement.ngc" Movement.ngd  
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fpg.ucf -p xc7a100t-csg324-3 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Movement_map.ncd Movement.ngd Movement.pcf 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fpg.ucf -p xc7a100t-csg324-3 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Movement_map.ncd Movement.ngd Movement.pcf 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fpg.ucf -p xc3s400-pq208-5 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o Movement_map.ncd Movement.ngd Movement.pcf 
+par -w -intstyle ise -ol high -t 1 Movement_map.ncd Movement.ncd Movement.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Movement.twx Movement.ncd -o Movement.twr Movement.pcf -ucf fpg.ucf 
+bitgen -intstyle ise -f Movement.ut Movement.ncd 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fpg.ucf -p xc3s400-pq208-5 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o Movement_map.ncd Movement.ngd Movement.pcf 
+par -w -intstyle ise -ol high -t 1 Movement_map.ncd Movement.ncd Movement.pcf 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fpg.ucf -p xc3s400-pq208-5 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o Movement_map.ncd Movement.ngd Movement.pcf 
+par -w -intstyle ise -ol high -t 1 Movement_map.ncd Movement.ncd Movement.pcf 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fpg.ucf -p xc3s400-pq208-5 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o Movement_map.ncd Movement.ngd Movement.pcf 
+par -w -intstyle ise -ol high -t 1 Movement_map.ncd Movement.ncd Movement.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Movement.twx Movement.ncd -o Movement.twr Movement.pcf -ucf fpg.ucf 
+bitgen -intstyle ise -f Movement.ut Movement.ncd 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fpg.ucf -p xc3s400-pq208-5 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o Movement_map.ncd Movement.ngd Movement.pcf 
+par -w -intstyle ise -ol high -t 1 Movement_map.ncd Movement.ncd Movement.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Movement.twx Movement.ncd -o Movement.twr Movement.pcf -ucf fpg.ucf 
+bitgen -intstyle ise -f Movement.ut Movement.ncd 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fpg.ucf -p xc3s400-pq208-5 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o Movement_map.ncd Movement.ngd Movement.pcf 
+par -w -intstyle ise -ol high -t 1 Movement_map.ncd Movement.ncd Movement.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Movement.twx Movement.ncd -o Movement.twr Movement.pcf -ucf fpg.ucf 
+bitgen -intstyle ise -f Movement.ut Movement.ncd 
+bitgen -intstyle ise -f Movement.ut Movement.ncd 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fpg.ucf -p xc3s400-pq208-5 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o Movement_map.ncd Movement.ngd Movement.pcf 
+par -w -intstyle ise -ol high -t 1 Movement_map.ncd Movement.ncd Movement.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Movement.twx Movement.ncd -o Movement.twr Movement.pcf -ucf fpg.ucf 
+bitgen -intstyle ise -f Movement.ut Movement.ncd 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fpg.ucf -p xc3s400-pq208-5 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o Movement_map.ncd Movement.ngd Movement.pcf 
+par -w -intstyle ise -ol high -t 1 Movement_map.ncd Movement.ncd Movement.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Movement.twx Movement.ncd -o Movement.twr Movement.pcf -ucf fpg.ucf 
+bitgen -intstyle ise -f Movement.ut Movement.ncd 
+xst -intstyle ise -ifn "G:/Az e Manteghi/Project/Elevator/Movement.xst" -ofn "G:/Az e Manteghi/Project/Elevator/Movement.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fpg.ucf -p xc3s400-pq208-5 "Movement.ngc" Movement.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o Movement_map.ncd Movement.ngd Movement.pcf 
+par -w -intstyle ise -ol high -t 1 Movement_map.ncd Movement.ncd Movement.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Movement.twx Movement.ncd -o Movement.twr Movement.pcf -ucf fpg.ucf 
+bitgen -intstyle ise -f Movement.ut Movement.ncd 

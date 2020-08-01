@@ -1,0 +1,4 @@
+vhdl work "freq_divider.vhd"
+vhdl work "Added Modules/RAM/RAM.vhd"
+vhdl work "Added Modules/counter/counter.vhd"
+verilog work "Management (3).v"

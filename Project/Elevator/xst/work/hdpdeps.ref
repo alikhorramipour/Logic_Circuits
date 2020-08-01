@@ -1,0 +1,8 @@
+V3 3
+FL "G:/Az e Manteghi/Project/Elevator/freq_divider.vhd" 2018/12/23.16:40:05 P.20131013
+EN work/freq_divider 1546168003 \
+      FL "G:/Az e Manteghi/Project/Elevator/freq_divider.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/freq_divider/behavioral 1546168004 \
+      FL "G:/Az e Manteghi/Project/Elevator/freq_divider.vhd" \
+      EN work/freq_divider 1546168003

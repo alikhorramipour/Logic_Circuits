@@ -1,0 +1,21 @@
+NET "clk" LOC = P184;
+NET "RST" LOC = P185;
+
+NET "inCall[3]" LOC = P183;
+NET "inCall[2]" LOC = P182;
+NET "inCall[1]" LOC = P181;
+
+NET "outCall[3]" LOC = P171;
+NET "outCall[2]" LOC = P169;
+NET "outCall[1]" LOC = P168;
+
+NET "loc[3]" LOC = P165;
+NET "loc[2]" LOC = P162;
+NET "loc[1]" LOC = P161;
+
+NET "doorOut[3]" LOC = P61;
+NET "doorOut[2]" LOC = P62;
+NET "doorOut[1]" LOC = P63;
+
+NET "motorOut[1]" LOC = P42;
+NET "motorOut[0]" LOC = P43;

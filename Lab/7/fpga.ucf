@@ -1,0 +1,14 @@
+NET "a[3]" LOC = P183;
+NET "a[2]" LOC = P182;
+NET "a[1]" LOC = P181;
+NET "a[0]" LOC = P180;
+NET "b[3]" LOC = P178;
+NET "b[2]" LOC = P176;
+NET "b[1]" LOC = P169;
+NET "b[0]" LOC = P172;
+NET "select" LOC = P171;
+NET "res[3]" LOC = P61;
+NET "res[2]" LOC = P62;
+NET "res[1]" LOC = P63;
+NET "res[0]" LOC = P64;
+NET "carry" LOC = P67;

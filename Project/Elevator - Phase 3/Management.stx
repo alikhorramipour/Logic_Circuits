@@ -1,0 +1,59 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/backep c/Uni/Term e 3/Logic/Project/Elevator - Phase 3/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to D:/backep c/Uni/Term e 3/Logic/Project/Elevator - Phase 3/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/backep c/Uni/Term e 3/Logic/Project/Elevator - Phase 3/Added Modules/counter/counter.vhd" in Library work.
+Architecture behavioral of Entity counter is up to date.
+Compiling vhdl file "D:/backep c/Uni/Term e 3/Logic/Project/Elevator - Phase 3/Added Modules/RAM/RAM.vhd" in Library work.
+Architecture rtl of Entity syncsram is up to date.
+Compiling vhdl file "D:/backep c/Uni/Term e 3/Logic/Project/Elevator - Phase 3/freq_divider.vhd" in Library work.
+Architecture behavioral of Entity freq_divider is up to date.
+Compiling verilog file "Management (3).v" in library work
+Module <Management> compiled
+ERROR:HDLCompilers:44 - "Management (3).v" line 95 Illegal left hand side of blocking assignment
+ERROR:HDLCompilers:52 - "Management (3).v" line 106 Illegal operand(s) of binary operator '!='
+ERROR:HDLCompilers:71 - "Management (3).v" line 106 Illegal condition expression in if statement
+ERROR:HDLCompilers:44 - "Management (3).v" line 107 Illegal left hand side of blocking assignment
+ERROR:HDLCompilers:52 - "Management (3).v" line 118 Illegal operand(s) of binary operator '!='
+ERROR:HDLCompilers:71 - "Management (3).v" line 118 Illegal condition expression in if statement
+ERROR:HDLCompilers:44 - "Management (3).v" line 119 Illegal left hand side of blocking assignment
+ERROR:HDLCompilers:44 - "Management (3).v" line 133 Illegal left hand side of blocking assignment
+ERROR:HDLCompilers:247 - "Management (3).v" line 167 Reference to scalar wire 'my_count' is not a legal reg or variable lvalue
+ERROR:HDLCompilers:44 - "Management (3).v" line 167 Illegal left hand side of blocking assignment
+ERROR:HDLCompilers:247 - "Management (3).v" line 181 Reference to scalar wire 'my_lock_rw' is not a legal reg or variable lvalue
+ERROR:HDLCompilers:44 - "Management (3).v" line 181 Illegal left hand side of blocking assignment
+ERROR:HDLCompilers:44 - "Management (3).v" line 186 Illegal left hand side of blocking assignment
+ERROR:HDLCompilers:52 - "Management (3).v" line 211 Illegal operand(s) of binary operator '=='
+ERROR:HDLCompilers:71 - "Management (3).v" line 211 Illegal condition expression in if statement
+ERROR:HDLCompilers:52 - "Management (3).v" line 214 Illegal operand(s) of binary operator '=='
+ERROR:HDLCompilers:71 - "Management (3).v" line 214 Illegal condition expression in if statement
+ERROR:HDLCompilers:52 - "Management (3).v" line 220 Illegal operand(s) of binary operator '=='
+ERROR:HDLCompilers:71 - "Management (3).v" line 220 Illegal condition expression in if statement
+ERROR:HDLCompilers:52 - "Management (3).v" line 227 Illegal operand(s) of binary operator '!='
+ERROR:HDLCompilers:71 - "Management (3).v" line 227 Illegal condition expression in if statement
+ERROR:HDLCompilers:52 - "Management (3).v" line 235 Illegal operand(s) of binary operator '=='
+ERROR:HDLCompilers:71 - "Management (3).v" line 235 Illegal condition expression in if statement
+Analysis of file <"Management.prj"> failed.
+--> 
+
+Total memory usage is 4500256 kilobytes
+
+Number of errors   :   23 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,5 @@
+NET "A" LOC = P183;
+NET "B" LOC = P182;
+NET "C" LOC = P181;
+NET "D" LOC = P180;
+NET "E" LOC = P42;
